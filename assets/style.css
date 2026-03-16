@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+html, body, [class*="css"] {
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+.rca-header {
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid #21262d;
+  margin-bottom: 1.5rem;
+}
+
+.rca-header h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #58a6ff;
+  margin: 0.25rem 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.rca-header .subtitle {
+  color: #8b949e;
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 0.35rem;
+}
+
+.rca-badge {
+  background: #1f6feb;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+/* ── Cause tags ──────────────────────────────────────── */
+.cause-tag {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  color: #e6edf3;
+  line-height: 1.5;
+}
+
+/* ── Streamlit widget overrides ──────────────────────── */
+.stTextInput > div > div > input,
+.stSelectbox > div > div > div {
+  background: #161b22 !important;
+  border: 1px solid #30363d !important;
+  color: #c9d1d9 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  border-radius: 6px !important;
+}
+
+.stTextInput > div > div > input:focus {
+  border-color: #58a6ff !important;
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15) !important;
+}
+
+.stButton > button {
+  background: #21262d !important;
+  border: 1px solid #30363d !important;
+  color: #c9d1d9 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  border-radius: 6px !important;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  font-size: 0.82rem !important;
+}
+
+.stButton > button:hover {
+  border-color: #58a6ff !important;
+  background: rgba(31, 111, 235, 0.12) !important;
+  color: #58a6ff !important;
+}
+
+.stExpander {
+  border: 1px solid #21262d !important;
+  background: #0d1117 !important;
+  border-radius: 6px !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.streamlit-expanderHeader {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+}
+
+.stDownloadButton > button {
+  background: #161b22 !important;
+  border: 1px solid #30363d !important;
+  color: #58a6ff !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  border-radius: 6px !important;
+  font-size: 0.82rem !important;
+}
+
+.stDownloadButton > button:hover {
+  border-color: #58a6ff !important;
+  background: rgba(31, 111, 235, 0.12) !important;
+}
+
+.stMetric {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 0.75rem !important;
+}
+
+.stMetric label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.7rem !important;
+  color: #8b949e !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stMetric [data-testid="stMetricValue"] {
+  font-family: 'JetBrains Mono', monospace !important;
+  color: #58a6ff !important;
+  font-size: 1.8rem !important;
+}
+
+.stSelectbox label,
+.stTextInput label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.78rem !important;
+  color: #8b949e !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Section headings */
+h3 {
+  font-size: 0.9rem !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #8b949e !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+  background: #0d1117 !important;
+  border-right: 1px solid #21262d !important;
+}
+
+section[data-testid="stSidebar"] h2 {
+  font-size: 0.78rem !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: #8b949e !important;
+}
+
+/* Info / warning boxes */
+.stInfo, div[data-testid="stAlert"] {
+  background: #161b22 !important;
+  border: 1px solid #1f6feb !important;
+  border-radius: 6px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.82rem !important;
+}
+
+/* Horizontal rule */
+hr {
+  border-color: #21262d !important;
+  margin: 1rem 0 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* Caption / small text */
+.stCaption, small {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  color: #6e7681 !important;
+}
+
+/* Table in report */
+.stMarkdown table {
+  font-size: 0.8rem !important;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stMarkdown table th,
+.stMarkdown table td {
+  border: 1px solid #30363d !important;
+  padding: 6px 12px !important;
+  text-align: left;
+}
+
+.stMarkdown table th {
+  background: #161b22 !important;
+  color: #8b949e !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stMarkdown table tr:nth-child(even) td {
+  background: #0d1117 !important;
+}
+
+.stMarkdown table tr:nth-child(odd) td {
+  background: #161b22 !important;
+}
